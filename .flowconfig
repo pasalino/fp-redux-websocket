@@ -1,0 +1,17 @@
+[ignore]
+.*/dist/.*
+.*/es/.*
+.*/lib/.*
+.*/node_modules/.*
+
+[include]
+
+[libs]
+flow-typed
+
+[lints]
+
+[options]
+all=true
+
+[strict]

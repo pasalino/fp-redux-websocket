@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:flowtype/recommended"
+  ],
+  "env": {
+    "mocha": true,
+    "node": true
+  },
+  "globals": {
+    "expect": true
+  },
+  "rules": {
+    "padded-blocks": "error",
+    "no-use-before-define": [
+      "error",
+      "nofunc"
+    ],
+    "no-unused-expressions": "error",
+    "flowtype/no-types-missing-file-annotation": "off",
+    "flowtype/no-primitive-constructor-types": "error",
+    "flowtype/no-weak-types": 2,
+    "flowtype/require-parameter-type": "error",
+    "flowtype/require-return-type": [
+      "error",
+      "always"
+    ],
+    "flow-vars/define-flow-type": "error",
+    "flow-vars/use-flow-type": "error"
+  },
+  "parser": "babel-eslint",
+  "plugins": [
+    "flowtype",
+    "flow-vars"
+  ]
+}
