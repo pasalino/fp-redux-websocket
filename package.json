@@ -7,7 +7,7 @@
     "flow": "flow",
     "lint": "eslint src tests",
     "pretest": "npm run lint & npm run flow",
-    "test": "cross-env BABEL_ENV=commonjs mocha --compilers js:babel-core/register --reporter spec test/*.js"
+    "test": "mocha --compilers js:babel-core/register tests/*.js"
   },
   "repository": {
     "type": "git",

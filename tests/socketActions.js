@@ -1,6 +1,3 @@
-const { WEBSOCKET_DISCONNECT, WEBSOCKET_SEND_MESSAGE } = require('../src/action');
-const { sendMessage, sendObject, wsDisconnect } = require('../src');
-
 const { WEBSOCKET_CONNECT, wsConnect } = require('../src');
 
 const { describe, it } = require('mocha');
@@ -9,7 +6,6 @@ const chai = require('chai');
 const { expect } = chai;
 
 const url = 'http://www.google.it';
-const simpleMessage = 'hello!';
 
 const socketActions = () => {
   describe('Socket Actions', () => {

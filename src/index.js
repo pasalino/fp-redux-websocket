@@ -1,3 +1,4 @@
+/* eslint-disable flowtype/no-weak-types */
 // @flow
 import {
   closed,
@@ -33,16 +34,14 @@ import {
 } from './utils';
 
 
-// eslint-disable-next-line flowtype/no-weak-flow-typed
 export const createPersistentWebSocketMiddleware = (options: Options = {}): Function => {
   const websocketOptions: Options = Object.assign({}, defaultProps, options);
   let webSocketList: Array<WebSocket> = [];
   let webSocketTimeoutList: TimeoutList = {};
   const closedByUser: Array<string> = [];
 
-  // eslint-disable-next-line flowtype/no-weak-flow-typed
   return ({ dispatch }: { dispatch: Function }): Function =>
-    // eslint-disable-next-line flowtype/no-weak-flow-typed,flowtype/require-parameter-type
+    // eslint-disable-next-line flowtype/require-parameter-type
     (next: Function): Function => (action) => {
       switch (action.type) {
         case WEBSOCKET_CONNECT: {
