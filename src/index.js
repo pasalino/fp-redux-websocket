@@ -38,7 +38,7 @@ export const createPersistentWebSocketMiddleware = (options: Options = {}): Func
   const websocketOptions: Options = Object.assign({}, defaultProps, options);
   let webSocketList: Array<WebSocket> = [];
   let webSocketTimeoutList: TimeoutList = {};
-  const closedByUser: Array<string> = [];
+  onst closedByUser: Array<string> = [];
 
   return ({ dispatch }: { dispatch: Function }): Function =>
     // eslint-disable-next-line flowtype/require-parameter-type

@@ -9,6 +9,12 @@
     "pretest": "npm run lint & npm run flow",
     "test": "mocha --compilers js:babel-core/register tests/*.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test",
+      "pre-push": "npm test"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ksnll/redux-persistent-websocket.git"
@@ -45,6 +51,7 @@
     "eslint-plugin-react": "^7.10.0",
     "flow-bin": "^0.77.0",
     "flowtype": "^2.0.0",
+    "husky": "^1.0.0-rc.13",
     "mocha": "latest",
     "nyc": "^12.0.2",
     "redux": "^4.0.0"
