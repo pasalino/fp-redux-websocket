@@ -20,7 +20,7 @@ This library ecloses all features that you may need in WebSocket used with Redux
 
 It's dependences free and have <10k size.
 
-The middleware provide an auto reconnect system when websocket is closed my error. 
+The middleware provide an auto reconnect system when websocket is closed by error. 
 By default encode and decode JSON message.
 If you want dispatch directly actions from server in Redux. If you send JSON in Action pattern the middleware dispatch it.
 
