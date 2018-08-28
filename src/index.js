@@ -34,7 +34,7 @@ import {
 } from './utils';
 
 
-export const createPersistentWebSocketMiddleware = (options: Options = {}): Function => {
+export const createFPWebSocketMiddleware = (options: Options = {}): Function => {
   const websocketOptions: Options = Object.assign({}, defaultProps, options);
   let webSocketList: Array<WebSocket> = [];
   let webSocketTimeoutList: TimeoutList = {};
