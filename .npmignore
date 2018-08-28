@@ -6,3 +6,11 @@ dist
 es
 .idea
 tests
+flow-typed
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc
+.flowconfig
+.travis.yml
+CONTRIBUTING.md

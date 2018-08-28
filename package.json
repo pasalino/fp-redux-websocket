@@ -1,14 +1,15 @@
 {
-  "name": "redux-persistent-websocket",
-  "version": "0.0.1",
-  "description": "WebSockets for redux.",
+  "name": "fp-redux-websocket",
+  "version": "0.0.1a",
+  "description": "Middleware for use websocket with Redux. You can dispatch action directly from server.",
+  "main": "src/index.js",
   "scripts": {
-    "build": "npm run build",
     "flow": "flow",
     "lint": "eslint src tests",
     "pretest": "npm run lint & npm run flow",
     "test": "mocha --compilers js:babel-core/register tests/*.js"
   },
+  "homepage": "https://pasalino.com/redux-persistent-websocket/",
   "husky": {
     "hooks": {
       "pre-commit": "npm test",
@@ -17,9 +18,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ksnll/redux-persistent-websocket.git"
+    "url": "https://github.com/pasalino/fp-redux-websocket"
   },
-  "homepage": "https://github.com/ksnll/redux-persistent-websocket",
   "keywords": [
     "redux",
     "websocket",
