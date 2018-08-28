@@ -9,7 +9,8 @@
     "pretest": "npm run lint & npm run flow",
     "test": "mocha --compilers js:babel-core/register tests/*.js",
     "babel": "babel src/ -d lib",
-    "prepack": "npm run test & npm run babel"
+    "prepack": "npm run test & npm run babel",
+    "report-coverage": "./node_modules/.bin/nyc npm test && ./node_modules/.bin/nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "homepage": "https://pasalino.com/redux-persistent-websocket/",
   "husky": {
@@ -45,6 +46,7 @@
     "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-3": "^6.24.1",
     "chai": "^4.1.2",
+    "codecov": "^3.0.4",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-flow-vars": "^0.5.0",
