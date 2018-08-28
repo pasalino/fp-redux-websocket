@@ -1,6 +1,6 @@
 {
   "name": "fp-redux-websocket",
-  "version": "0.0.5a",
+  "version": "1.0.0",
   "description": "Middleware for use websocket with Redux. You can dispatch action directly from server.",
   "main": "lib/index.js",
   "scripts": {
