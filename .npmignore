@@ -1,7 +1,7 @@
 node_modules
 coverage
 *.log
-lib
+src
 dist
 es
 .idea

@@ -1,15 +1,14 @@
 {
   "name": "fp-redux-websocket",
-  "version": "0.0.3a",
+  "version": "0.0.2a",
   "description": "Middleware for use websocket with Redux. You can dispatch action directly from server.",
   "main": "lib/index.js",
   "scripts": {
     "flow": "flow",
     "lint": "eslint src tests",
+    "babel": "babel ./src -d ./lib",
     "pretest": "npm run lint & npm run flow",
-    "test": "mocha --compilers js:babel-core/register tests/*.js",
-    "babel": "babel src/ -d lib",
-    "prepack": "npm run test & npm run babel"
+    "test": "mocha --compilers js:babel-core/register tests/*.js"
   },
   "homepage": "https://pasalino.com/redux-persistent-websocket/",
   "husky": {
