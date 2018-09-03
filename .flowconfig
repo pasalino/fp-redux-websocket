@@ -3,6 +3,8 @@
 .*/es/.*
 .*/lib/.*
 .*/node_modules/.*
+.*/examples/.*
+.*/examples/src/.*
 
 [include]
 

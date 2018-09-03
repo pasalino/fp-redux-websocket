@@ -7,3 +7,4 @@ es
 .idea
 .nyc_output
 coverage.lcov
+package
